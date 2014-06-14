@@ -18,4 +18,62 @@
           </div>
     </div>
 </div>
-</div> --><div ng-show="layout == 'list'"><div class="listView row"><div class="col-xs-12 noPadding"><div ng-repeat="item in items" class="topicBox col-xs-12"><div class="row"><div class="col-xs-4 col-sm-2 topicImage"><img ng-src="{{ item.img_link }}" class="img-responsive"></div><div class="col-xs-8 col-sm-10 removeRightPadding"><div class="topicTitle"><a href="#/app/events/{{item.id}}">{{item.title}}</a></div><div class="topicDescription" ng-bind-html="item.description"></div><div class="topicSource"><img src="http://www.nzherald.co.nz/favicon.png" width="16">nzherald.co.nz / {{item.pubDate}}</div></div></div></div></div></div></div><div class="row" ng-show="layout == 'grid'"><div class="listView gridView"><div class="row-fluid col-xs-12 removePaddings"><div class="col-xs-6 firstCol"><ul><li ng-repeat="item in items | gridfilter:'0'" class="topicBox"><div class="row"><div class="topicTitle col-xs-12 removePaddings"><a ng-click="topicClick($index*2)" hrefa="#/topic/news/{{item.id}}">{{item.title}}</a></div><div class="topicImage col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 removePaddings"><img data-original="{{ item.img_link }}" class="lazy img-responsive"></div><div class="topicDescription hidden-xs col-xs-12 removePaddings" ng-if="item.img_link == ''" ng-bind-html="item.description"></div><div class="topicSource col-xs-12 removePaddings"><img src="http://www.nzherald.co.nz/favicon.png" width="16">nzherald.co.nz / {{item.pubDate}}</div></div></li></ul></div><div class="col-xs-6 secondCol" style="border-left: 1px dotted #c9c9c9"><ul><li ng-repeat="item in items | gridfilter:'1'" class="topicBox"><div class="row"><div class="topicTitle col-xs-12 removePaddings"><a href="#/app/events/{{item.id}}">{{item.title}}</a></div><div class="topicImage col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 removePaddings"><img data-original="{{ item.img_link }}" class="lazy2 img-responsive"></div><div class="topicDescription col-xs-12 removePaddings" ng-if="item.img_link == ''" ng-bind-html="item.description"></div><div class="topicSource col-xs-12 removePaddings"><img src="http://www.nzherald.co.nz/favicon.png" width="16">nzherald.co.nz / {{item.pubDate}}</div></div></li></ul></div></div></div><div class="rightAdvWrapper hidden-xs"><div style="height: 300px; border: 1px solid #FF0000; width: 100%"></div></div></div></ion-content></ion-view>
+</div> --><div ng-show="layout == 'list'"><div class="listView row"><div class="col-xs-12 noPadding"><div ng-repeat="item in items" class="topicBox col-xs-12"><div class="row"><div class="col-xs-4 col-sm-2 topicImage"><!--  <img  ng-src="{{ item.img_link }}"  class="img-responsive"  /> --></div><div class="col-xs-8 col-sm-10 removeRightPadding"><div class="topicTitle"><a href="#/app/events/{{item.id}}">{{item.title}}</a></div><div class="topicDescription" ng-bind-html="item.description"></div><div class="topicSource"><img src="http://www.nzherald.co.nz/favicon.png" width="16">nzherald.co.nz / {{item.pubDate}}</div></div></div></div></div></div></div><!--
+<div class="row" ng-show="layout == 'grid'">
+
+
+  <div class="listView gridView">
+    <div class="row-fluid col-xs-12 removePaddings" >
+     <div class="col-xs-6 firstCol">
+        <ul>
+          <li ng-repeat="item in items | gridfilter:'0'" class="topicBox">
+            <div class="row">
+                <div class="topicTitle col-xs-12 removePaddings">
+                  <a ng-click="topicClick($index*2)" hrefa="#/topic/news/{{item.id}}">{{item.title}}</a>
+                </div>
+              <div class="topicImage col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 removePaddings">
+                <img  data-original="{{ item.img_link }}"  class="lazy img-responsive" />
+              </div>                            
+
+                <div class="topicDescription hidden-xs col-xs-12 removePaddings" ng-if="item.img_link == ''" ng-bind-html="item.description">
+                </div>
+                <div class="topicSource col-xs-12 removePaddings">
+                  <img src="http://www.nzherald.co.nz/favicon.png" width="16" />nzherald.co.nz / {{item.pubDate}}
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-6 secondCol" style="border-left: 1px dotted #c9c9c9;">
+        <ul>
+          <li ng-repeat="item in items | gridfilter:'1'" class="topicBox">
+            <div class="row">
+                <div class="topicTitle col-xs-12 removePaddings">
+                  <a href="#/app/events/{{item.id}}">{{item.title}}</a>
+                </div>
+              <div class="topicImage col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 removePaddings">
+                <img  data-original="{{ item.img_link }}"  class="lazy2 img-responsive" />
+              </div>                            
+
+                <div class="topicDescription col-xs-12 removePaddings" ng-if="item.img_link == ''" ng-bind-html="item.description">
+                </div>
+                <div class="topicSource col-xs-12 removePaddings">
+                  <img src="http://www.nzherald.co.nz/favicon.png" width="16" />nzherald.co.nz / {{item.pubDate}}
+                </div>
+            </div>
+          </li>
+        </ul>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="rightAdvWrapper hidden-xs">
+    <div style="height: 300px; border: 1px solid #FF0000; width: 100%;"> 
+    </div>
+  </div> 
+
+
+</div> 
+
+--></ion-content></ion-view>
