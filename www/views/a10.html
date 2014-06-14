@@ -1,0 +1,3 @@
+<p>This is the login view.</p><button ng-click="openLogin('Facebook')">LOGIN Facebook</button> <button ng-click="openLogin('Google')">LOGIN Google</button> <button ng-click="openLogin('Twitter')">LOGIN Twitter</button> <button ng-click="getUser()">GET USER</button><input ng-model="customer.email"><input type="password" ng-model="customer.password"><button ng-click="login()">LOG IN</button><script>function loginsuccess(token){
+	window.sessionStorage.token = token;
+}</script>
