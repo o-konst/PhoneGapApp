@@ -59,11 +59,16 @@
     <gap:plugin name="org.apache.cordova.globalization" />
 	<gap:plugin name="org.apache.cordova.vibration" />
 	<gap:plugin name="org.apache.cordova.media" />
-    <gap:plugin name="org.apache.cordova.InAppBrowser" />
+   <gap:plugin name="org.apache.cordova.InAppBrowser" /> 
 
  
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
+
+<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+    <param name="ios-package" value="CDVInAppBrowser" />
+</feature>
 
 
     <!-- Third party plugins -->
@@ -95,6 +100,9 @@
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+
+    <icon src="res/screen/android/screen-xxhdpi-portrait.png" gap:platform="android" gap:qualifier="xxhdpi" />
+
     <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
