@@ -64,7 +64,7 @@
  
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
-
+<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 <feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.InAppBrowser" />
     <param name="ios-package" value="CDVInAppBrowser" />
