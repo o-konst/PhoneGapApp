@@ -3,9 +3,10 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
         id        = "com.milkbooks.milkphotobooks"
         version   = "1.0.2">
+ <preference name="phonegap-version" value="3.1.0" />
 
     <name>Hello World</name>
 
@@ -43,7 +44,7 @@
 
     <!-- Plugins -->
 
-    <!-- Core plugins 
+    <!-- Core plugins  -->
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -58,8 +59,9 @@
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
 	<gap:plugin name="org.apache.cordova.vibration" />
-	<gap:plugin name="org.apache.cordova.media" />-->
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="org.apache.cordova.media" />
+    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+
  
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
