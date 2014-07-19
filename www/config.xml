@@ -6,7 +6,6 @@
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id        = "com.milkbooks.milkphotobooks"
         version   = "1.0.2">
- <preference name="phonegap-version" value="3.1.0" />
 
     <name>Hello World</name>
 
