@@ -60,7 +60,7 @@
     <gap:plugin name="org.apache.cordova.globalization" />
 	<gap:plugin name="org.apache.cordova.vibration" />
 	<gap:plugin name="org.apache.cordova.media" />
-    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+    <gap:plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 
  
     <gap:plugin name="org.apache.cordova.network-information" />
