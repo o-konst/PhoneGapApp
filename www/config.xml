@@ -26,7 +26,7 @@
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.5.0" />          <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
@@ -95,12 +95,17 @@
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
     <!-- Define app splash screen for each platform. -->
+	<gap:splash src="res/screen/android/screen-ldpi-landscape.png"       gap:platform="android" gap:qualifier="ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-landscape.png"       gap:platform="android" gap:qualifier="mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-landscape.png"       gap:platform="android" gap:qualifier="hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-landscape.png"      gap:platform="android" gap:qualifier="xhdpi" />
+	 <gap:splash src="res/screen/android/screen-xxhdpi-landscape.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	 
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
-
-    <gap:splash src="res/screen/android/screen-xxhdpi-portrait.png" gap:platform="android" gap:qualifier="xxhdpi" />
+    <gap:splash src="res/screen/android/screen-xxhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
 
     <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
