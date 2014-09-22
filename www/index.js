@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        //alert("hghg");
     },
     
     // Bind any events that are required on startup. Common events are:
@@ -27,7 +28,7 @@ var app = {
     bindEvents: function() {
         document.addEventListener('load', this.onLoad, false);
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        window.addEventListener("orientationchange", orientationChange, true);
+       // window.addEventListener("orientationchange", orientationChange, true);
     },
     onLoad: function() {
         
@@ -35,6 +36,8 @@ var app = {
    
     // deviceready Event Handler
     onDeviceReady: function() {
+        alert(device.name);
+
         /*angular.element(document).ready(function() {
             angular.bootstrap(document);
         });*/
