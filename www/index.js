@@ -36,7 +36,7 @@ var app = {
    
     // deviceready Event Handler
     onDeviceReady: function() {
-        alert("ghjgfvhj");
+        alert(1+device.platform);
         angular.bootstrap(document.body, ["digestApp"]);
         /*angular.element(document).ready(function() {
             angular.bootstrap(document);
