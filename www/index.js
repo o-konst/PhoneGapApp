@@ -21,6 +21,7 @@ var app = {
     initialize: function() {
         this.bindEvents();
         //alert("hghg");
+         //angular.bootstrap(document.body, ["digestApp"]);
     },
     
     // Bind any events that are required on startup. Common events are:
@@ -36,7 +37,7 @@ var app = {
    
     // deviceready Event Handler
     onDeviceReady: function() {
-        alert(1+device.platform);
+        //alert(1+device.platform);
         angular.bootstrap(document.body, ["digestApp"]);
         /*angular.element(document).ready(function() {
             angular.bootstrap(document);
