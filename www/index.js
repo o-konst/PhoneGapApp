@@ -16,12 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+ var debug = false;
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
         //alert("hghg");
-         //angular.bootstrap(document.body, ["digestApp"]);
+        if(debug)
+        {
+            angular.bootstrap(document.body, ["digestApp"]);
+        }
     },
     
     // Bind any events that are required on startup. Common events are:
