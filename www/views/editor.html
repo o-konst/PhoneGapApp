@@ -1,0 +1,28 @@
+<div id="wrap" class="wrapper" style="overflow:hidden; width:100%;">
+  <div class="header_wrapper">
+    <div class="header">
+      EDITOR
+      <a href="#/templates" class="btn btn-default">back</a> 
+       <a href="" ng-click="selectPhoto()" class="btn btn-default">photo</a> 
+       <a href="" class="btn btn-default" ng-click="saveBtnClick()">save</a> 
+       <div id="fileupload"><input  type="file"></div>   
+    </div>
+  </div>
+        
+  <div class="">
+  <div class="row">
+      <a class="btn btn-primary rotateBtn" href="#template">r</a>
+    <div class="box" >
+      <div card id="card" style="position: absolute; left: 50px; top: 50px;">
+			   <div>
+            <img id="cardbgimage" cardbgimage ng-src="{{project.card.bgimage}}" />
+          </div>
+			   <div placeholder ng-repeat="placeholderdata in project.template.placeholders" style="position: absolute;"></div>
+			   <div style="position: absolute;">
+            <img id="templateimage" templateimage ng-src="{{project.template.url}}"/>
+          </div>
+		</div>
+    </div>
+  </div>     
+</div>
+

@@ -1,0 +1,24 @@
+<div id="wrap" class="wrapper" style="overflow:hidden; width:100%;">
+  <div class="header_wrapper">
+    <div class="header">
+      MAIN
+
+      <button class="btn btn-default"></button>
+       <a href="" ng-click="selectPhoto()" class="btn btn-default">photo</a>        
+    </div>
+  </div>
+        
+  <div class="">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <a class="btn btn-primary" href="#/templates">Create card</a>
+    </div>
+    <div class="col-xs-6 col-md-4" ng-repeat="card in cards">
+        <div ng-click="previewCardClick(card)">
+        <img ng-src="{{card.cardPreviewUrl}}" class="img-responsive" />
+         </div>
+    </div>
+    </div>
+  </div>     
+</div>
+<img id="myImage" width="200" height="200"  style="border:1px solid red;" / >

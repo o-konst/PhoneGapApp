@@ -1,0 +1,80 @@
+html{
+   height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+
+body{
+  color: #333333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  background-color: #ffffff;
+  height: 100%;
+  margin:0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header_wrapper
+{
+  height: 55px; 
+  width: 100%; 
+  background-color: #f0f0f0;
+
+}
+
+.header
+{
+  height: 53px;
+  line-height: 53px;
+  display: block;
+}
+
+
+
+.view-animate-container {
+ 
+}
+
+.view-animate {
+ /* padding:10px;*/
+   display:block;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+ -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+opacity: 0;
+}
+
+.view-animate.ng-enter {
+ /* left:100%;*/
+  opacity: 0;
+}
+.view-animate.ng-enter.ng-enter-active {
+  /*left:0;*/
+  opacity: 1;
+}
+.view-animate.ng-leave.ng-leave-active {
+  /*left:-100%;*/
+  opacity: 0;
+}
+

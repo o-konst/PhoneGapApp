@@ -1,3 +1,66 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel="stylesheet" href="styles/8727a602.vendor.css"><link rel="stylesheet" href="styles/animate.css"><link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="styles/9d82d6df.main.css"><body><config ng-controller="ConfigCtrl"></config><div id="wrap" class="wrapper" style="overflow:hidden; width:100%"><div header="" ng-controller="HeaderCtrl" class="header_wrapper"></div><div class="content scrollcontent" ng-controller="ContentCtrl"><div class="lodingAlert alert alert-info" style="text-aling:center;display:none">Loading ...</div><div class="container-fluid view noPadding" ng-view=""></div></div></div><backdrop ng-controller="BackDropCtrl"></backdrop><div navigation="" ng-controller="NavCtrl" class="newnav nav_wrapper"></div><div settings="" ng-controller="SettingsCtrl" style="display:none"></div><div topic="" class="top top0" ng-controller="TopicCtrl"></div><script src="scripts/fd2c9c31.vendor.js"></script><script src="scripts/7e100660.scripts.js"></script><script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="index.js"></script><script type="text/javascript">app.initialize();</script>
-<img with="300" id="myImage" />
-</body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+            <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+          <title>Hello World</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+  <config ng-controller="ConfigCtrl"></config>
+
+<div class="view-animate-container">
+    <div ng-view class="view-animate"></div>
+  </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/hammerjs/hammer.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+        
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/preview.js"></script>
+        <script src="scripts/controllers/templates.js"></script>
+        <script src="scripts/controllers/editor.js"></script>
+        <script src="scripts/directives/card.js"></script>
+        <script src="scripts/directives/placeholder.js"></script>
+        <script src="scripts/directives/frame.js"></script>
+        <script src="scripts/services/settingsdata.js"></script>
+        <script src="scripts/directives/config.js"></script>
+        <script src="scripts/services/datafactory.js"></script>
+        <script src="scripts/services/projectfactory.js"></script>
+        <script src="scripts/directives/cardbgimage.js"></script>
+        <script src="scripts/directives/templateimage.js"></script>
+        <script src="scripts/services/generateframefactory.js"></script>
+        <script src="scripts/directives/imageonload.js"></script>
+        <!-- endbuild -->
+       <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">app.initialize();</script>
+</body>
+</html>
