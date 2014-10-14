@@ -1,17 +1,1 @@
-<div id="wrap" class="wrapper" style="overflow:hidden; width:100%;">
-  <div class="header_wrapper">
-    <div class="header">
-      TEMPLATES
-      <a href="#/main" class="btn btn-default">back</a> 
-      drop down      
-    </div>
-  </div>
-        
-  <div class="">
-  <div class="row">
-    <div class="col-xs-6 col-md-4" ng-repeat="template in templates">
-    <div ng-click="selectTemplate(template)">
-        <img ng-src="{{template.base.url}}" class="img-responsive" />
-    </div>
-  </div>     
-</div>
+<div class="header_wrapper"><div class="header">TEMPLATES <a href="#/main" class="btn btn-default">back</a> drop down</div></div><div style="margin-top:60px;margin-top: 60px"><div class="col-xs-12 no-padding"><div class="col-xs-6 col-md-4" ng-repeat="template in templates"><div ng-click="selectTemplate(template)"><img ng-src="{{template.base.url}}" class="img-responsive"></div></div></div></div>
